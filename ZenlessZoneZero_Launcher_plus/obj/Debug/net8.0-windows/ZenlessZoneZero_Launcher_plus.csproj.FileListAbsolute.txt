@@ -1,0 +1,7 @@
+D:\GenshinImpact_Launcher\ZenlessZoneZero_Launcher_plus\ZenlessZoneZero_Launcher_plus\obj\Debug\net8.0-windows\App.g.cs
+D:\GenshinImpact_Launcher\ZenlessZoneZero_Launcher_plus\ZenlessZoneZero_Launcher_plus\obj\Debug\net8.0-windows\ZenlessZoneZero_Launcher_plus_MarkupCompile.cache
+D:\GenshinImpact_Launcher\ZenlessZoneZero_Launcher_plus\ZenlessZoneZero_Launcher_plus\obj\Debug\net8.0-windows\ZenlessZoneZero_Launcher_plus_MarkupCompile.lref
+D:\GenshinImpact_Launcher\ZenlessZoneZero_Launcher_plus\ZenlessZoneZero_Launcher_plus\obj\Debug\net8.0-windows\ZenlessZoneZero_Launcher_plus.csproj.AssemblyReference.cache
+D:\GenshinImpact_Launcher\ZenlessZoneZero_Launcher_plus\ZenlessZoneZero_Launcher_plus\obj\Debug\net8.0-windows\MainWindow.baml
+D:\GenshinImpact_Launcher\ZenlessZoneZero_Launcher_plus\ZenlessZoneZero_Launcher_plus\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\GenshinImpact_Launcher\ZenlessZoneZero_Launcher_plus\ZenlessZoneZero_Launcher_plus\obj\Debug\net8.0-windows\ZenlessZoneZero_Launcher_plus_Content.g.cs
