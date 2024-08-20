@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\GenshinImpact_Launcher\\ZenlessZoneZero_Launcher_plus\\ZenlessZoneZero_Launcher_plus\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{618AEBD3-4DDD-4F3C-8BDF-610C0738FC13}|ZenlessZoneZero_Launcher_plus.csproj|d:\\genshinimpact_launcher\\zenlesszonezero_launcher_plus\\zenlesszonezero_launcher_plus\\zenlesszonezero_launcher_plus.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{618AEBD3-4DDD-4F3C-8BDF-610C0738FC13}|ZenlessZoneZero_Launcher_plus.csproj|solutionrelative:zenlesszonezero_launcher_plus.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{618AEBD3-4DDD-4F3C-8BDF-610C0738FC13}|ZenlessZoneZero_Launcher_plus.csproj|d:\\genshinimpact_launcher\\zenlesszonezero_launcher_plus\\zenlesszonezero_launcher_plus\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{618AEBD3-4DDD-4F3C-8BDF-610C0738FC13}|ZenlessZoneZero_Launcher_plus.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{618AEBD3-4DDD-4F3C-8BDF-610C0738FC13}|ZenlessZoneZero_Launcher_plus.csproj|d:\\genshinimpact_launcher\\zenlesszonezero_launcher_plus\\zenlesszonezero_launcher_plus\\zenlesszonezero_launcher_plus.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{618AEBD3-4DDD-4F3C-8BDF-610C0738FC13}|ZenlessZoneZero_Launcher_plus.csproj|solutionrelative:zenlesszonezero_launcher_plus.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{618AEBD3-4DDD-4F3C-8BDF-610C0738FC13}|ZenlessZoneZero_Launcher_plus.csproj|d:\\genshinimpact_launcher\\zenlesszonezero_launcher_plus\\zenlesszonezero_launcher_plus\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ZenlessZoneZero_Launcher_plus",
               "DocumentMoniker": "D:\\GenshinImpact_Launcher\\ZenlessZoneZero_Launcher_plus\\ZenlessZoneZero_Launcher_plus\\ZenlessZoneZero_Launcher_plus.csproj",
               "RelativeDocumentMoniker": "ZenlessZoneZero_Launcher_plus.csproj",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\GenshinImpact_Launcher\\ZenlessZoneZero_Launcher_plus\\ZenlessZoneZero_Launcher_plus\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "D:\\GenshinImpact_Launcher\\ZenlessZoneZero_Launcher_plus\\ZenlessZoneZero_Launcher_plus\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAhwBAAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-16T15:12:14.207Z",
               "EditorCaption": ""

@@ -11,11 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ZenlessZoneZero_Launcher_plus")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Catboss")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72a89f78380a8db5359c7a587707f2423405cd1a")]
-[assembly: System.Reflection.AssemblyProductAttribute("ZenlessZoneZero_Launcher_plus")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.0+7b58ece9b0fb8660bf98b14d2449a82fc9b79b1f")]
+[assembly: System.Reflection.AssemblyProductAttribute("绝区零启动器Plus")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZenlessZoneZero_Launcher_plus")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]

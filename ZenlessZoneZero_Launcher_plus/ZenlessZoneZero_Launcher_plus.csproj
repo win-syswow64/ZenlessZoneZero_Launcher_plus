@@ -6,30 +6,94 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+	<Version>1.0.0.0</Version>
+	<StartupObject>ZenlessZoneZero_Launcher_plus.App</StartupObject>
+	<ApplicationIcon>ICON.ico</ApplicationIcon>
+	<IsPublishable>true</IsPublishable>
+	<Platform>AnyCPU;x64</Platform>
+	<DebugType>embedded</DebugType>
+	<ApplicationManifest>app.manifest</ApplicationManifest>
+	<Authors>Catboss</Authors>
+	<Product>绝区零启动器Plus</Product>
   </PropertyGroup>
 
-  <ItemGroup>
+	<ItemGroup>
+		<None Remove="Images\AboutButton.png" />
+		<None Remove="Images\AddUserButton.png" />
+		<None Remove="Images\ImagesButton.png" />
+		<None Remove="Images\MainBackground.jpg" />
+		<None Remove="Images\SettingsButton.png" />
+		<None Remove="Images\TencentGroupButton.png" />
+		<None Remove="Images\UI_0.jpg" />
+		<None Remove="StaticRes\mihoyosdk.dll" />
+		<None Remove="StaticRes\Update.dll" />
+		<None Remove="Language\zh-cn.json" />
+		<None Remove="Language\zh-tw.json" />
+		<None Remove="Language\en-us.json" />
+		<None Remove="Language\list.json" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<Content Include="ICON.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Images\UI_0.jpg">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="StaticRes\mihoyosdk.dll">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Images\AboutButton.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\MainBackground.jpg">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\ImagesButton.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\TencentGroupButton.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\SettingsButton.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\AddUserButton.png">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="StaticRes\Update.dll">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Language\zh-cn.json">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Language\zh-tw.json">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Language\en-us.json">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Language\list.json">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ApplicationDefinition Update="App.xaml">
+			<CopyToOutputDirectory>Never</CopyToOutputDirectory>
+		</ApplicationDefinition>
+	</ItemGroup>
+
+	<ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
     <PackageReference Include="MahApps.Metro" Version="2.4.10" />
     <PackageReference Include="Microsoft-WindowsAPICodePack-Shell" Version="1.1.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
-	
-	<ItemGroup>
-    <None Remove="Images\AboutButton.png" />
-    <None Remove="Images\AddUserButton.png" />
-    <None Remove="Images\ImagesButton.png" />
-    <None Remove="Images\MainBackground.jpg" />
-    <None Remove="Images\SettingsButton.png" />
-    <None Remove="Images\TencentGroupButton.png" />
-    <None Remove="Images\UI_0.jpg" />
-    <None Remove="StaticRes\mihoyosdk.dll" />
-    <None Remove="StaticRes\Update.dll" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="ICON.ico" />
-  </ItemGroup>
-
 
 </Project>
