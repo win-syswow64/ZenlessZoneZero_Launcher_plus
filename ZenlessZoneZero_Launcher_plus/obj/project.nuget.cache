@@ -1,16 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "g1RW1fAIZ2M=",
+  "dgSpecHash": "N+kml8eitQQ=",
   "success": true,
-  "projectFilePath": "D:\\GenshinImpact_Launcher\\ZenlessZoneZero_Launcher_plus\\ZenlessZoneZero_Launcher_plus\\ZenlessZoneZero_Launcher_plus.csproj",
+  "projectFilePath": "D:\\GenshinImpact_Launcher\\ZenlessZoneZero_Launcher_plus\\ZenlessZoneZero_Launcher_Plus\\ZenlessZoneZero_Launcher_Plus.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\admin\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0-preview3\\communitytoolkit.mvvm.8.0.0-preview3.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\mahapps.metro\\2.4.10\\mahapps.metro.2.4.10.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.5\\microsoft-windowsapicodepack-core.1.1.5.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\microsoft-windowsapicodepack-shell\\1.1.5\\microsoft-windowsapicodepack-shell.1.1.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\mahapps.metro\\2.4.9\\mahapps.metro.2.4.9.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft-windowsapicodepack-core\\1.1.4\\microsoft-windowsapicodepack-core.1.1.4.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft-windowsapicodepack-shell\\1.1.4\\microsoft-windowsapicodepack-shell.1.1.4.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
-    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\snap.hutao.service.game.unlocker\\1.0.0\\snap.hutao.service.game.unlocker.1.0.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []

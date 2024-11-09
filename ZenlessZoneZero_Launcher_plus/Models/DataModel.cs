@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using ZenlessZoneZero_Launcher_plus.Helper;
+using System.Windows;
 
-namespace ZenlessZoneZero_Launcher_plus.Models
+namespace ZenlessZoneZero_Launcher_plus.Core
 {
     public class DataModel
     {
@@ -13,7 +13,6 @@ namespace ZenlessZoneZero_Launcher_plus.Models
         }
         IniParser parser { get; set; }
         IniParser gameparser { get; set; }
-
 
         /// <summary>
         /// 对程序目录下Config中Setting.ini的操作
@@ -131,6 +130,38 @@ namespace ZenlessZoneZero_Launcher_plus.Models
             }
         }
 
+
+        private string _ImageDate;
+        public string ImageDate
+        {
+            get
+            {
+                _ImageDate = parser.GetSetting("setup", "ImageDate", 1);
+                return _ImageDate;
+            }
+            set
+            {
+                _ImageDate = value;
+                parser.AddSetting("setup", "ImageDate", Convert.ToString(_ImageDate));
+                SaveDataToFile();
+            }
+        }
+
+        private string _MaxFps;
+        public string MaxFps
+        {
+            get
+            {
+                _MaxFps = parser.GetSetting("setup", "MaxFps", 0);
+                return _MaxFps;
+            }
+            set
+            {
+                _MaxFps = value;
+                parser.AddSetting("setup", "MaxFps", _MaxFps);
+            }
+        }
+
         private string _SwitchUser;
         public string SwitchUser
         {
@@ -143,6 +174,21 @@ namespace ZenlessZoneZero_Launcher_plus.Models
             {
                 _SwitchUser = value;
                 parser.AddSetting("setup", "SwitchUser", _SwitchUser);
+            }
+        }
+
+        private string _ImagePid;
+        public string ImagePid
+        {
+            get
+            {
+                _ImagePid = parser.GetSetting("setup", "ImagePid", 0);
+                return _ImagePid;
+            }
+            set
+            {
+                _ImagePid = value;
+                parser.AddSetting("setup", "ImagePid", _ImagePid);
             }
         }
 
@@ -160,6 +206,7 @@ namespace ZenlessZoneZero_Launcher_plus.Models
                 parser.AddSetting("setup", "isPopup", Convert.ToString(_IsPopup));
             }
         }
+
 
         private bool _IsWebBg;
         public bool IsWebBg
@@ -203,6 +250,21 @@ namespace ZenlessZoneZero_Launcher_plus.Models
             {
                 _FullSize = value;
                 parser.AddSetting("setup", "FullSize", Convert.ToString(_FullSize));
+            }
+        }
+
+        private bool _IsUnFPS;
+        public bool IsUnFPS
+        {
+            get
+            {
+                _IsUnFPS = Convert.ToBoolean(parser.GetSetting("setup", "isUnFPS", 2));
+                return _IsUnFPS;
+            }
+            set
+            {
+                _IsUnFPS = value;
+                parser.AddSetting("setup", "isUnFPS", Convert.ToString(_IsUnFPS));
             }
         }
 
@@ -265,13 +327,13 @@ namespace ZenlessZoneZero_Launcher_plus.Models
         {
             get
             {
-                _Channel = Convert.ToUInt16(gameparser.GetSetting("General", "channel", 1));
+                _Channel = Convert.ToUInt16(gameparser.GetSetting("general", "channel", 1));
                 return _Channel;
             }
             set
             {
                 _Channel = value;
-                gameparser.AddSetting("General", "channel", Convert.ToString(_Channel));
+                gameparser.AddSetting("general", "channel", Convert.ToString(_Channel));
             }
         }
 
@@ -280,13 +342,13 @@ namespace ZenlessZoneZero_Launcher_plus.Models
         {
             get
             {
-                _Sub_channel = Convert.ToUInt16(gameparser.GetSetting("General", "sub_channel", 1));
+                _Sub_channel = Convert.ToUInt16(gameparser.GetSetting("general", "sub_channel", 1));
                 return _Sub_channel;
             }
             set
             {
                 _Sub_channel = value;
-                gameparser.AddSetting("General", "sub_channel", Convert.ToString(_Sub_channel));
+                gameparser.AddSetting("general", "sub_channel", Convert.ToString(_Sub_channel));
             }
         }
 
@@ -295,19 +357,21 @@ namespace ZenlessZoneZero_Launcher_plus.Models
         {
             get
             {
-                _Cps = gameparser.GetSetting("General", "cps", 0);
+                _Cps = gameparser.GetSetting("general", "cps", 0);
                 return _Cps;
             }
             set
             {
                 _Cps = value;
-                gameparser.AddSetting("General", "cps", _Cps);
+                gameparser.AddSetting("general", "cps", _Cps);
             }
         }
+
         public void SaveDataToFile()
         {
             parser.SaveSettings();
             gameparser.SaveSettings();
         }
     }
+
 }

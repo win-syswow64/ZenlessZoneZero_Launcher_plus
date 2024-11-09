@@ -1,31 +1,100 @@
-﻿using System;
+﻿using ZenlessZoneZero_Launcher_plus.Core;
+using ZenlessZoneZero_Launcher_plus.Models;
+using ZenlessZoneZero_Launcher_plus.Service;
+using ZenlessZoneZero_Launcher_plus.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows;
-using ZenlessZoneZero_Launcher_plus.Core;
-using ZenlessZoneZero_Launcher_plus.Models;
-using ZenlessZoneZero_Launcher_plus.Server;
 
 namespace ZenlessZoneZero_Launcher_plus
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
-        private readonly SingleInstanceCheck _singleInstanceCheck = new("ZenlessZoneZeroLauncherPlus");
-
+        private readonly SingleInstanceChecker singleInstanceChecker = new("ZenlessZoneZeroLauncherPlus");
         public App()
         {
             LoadProgramCore = new();
+            DataModel = new();
+            InitializeComponent();
+        }
 
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            RunPathCheck();
+            //单例检查
+            singleInstanceChecker.Ensure(this, BringWindowToFront<MainWindow>);
+            base.OnStartup(e);
+        }
+
+        /// <summary>
+        /// 用于检查程序是否运行在游戏目录
+        /// </summary>
+        private static void RunPathCheck()
+        {
+            if (File.Exists(@"ZenlessZoneZero.exe") &&
+                Directory.Exists(@"ZenlessZoneZero_Data"))
+            {
+                MessageBox.Show("Error: This program cannot be running in this path!");
+
+                if (Directory.Exists(@"UserData"))
+                {
+                    Directory.Delete(@"UserData", true);
+                }
+                if (Directory.Exists(@"Config"))
+                {
+                    Directory.Delete(@"Config", true);
+                }
+                Environment.Exit(0);
+            }
+        }
+
+        /// <summary>
+        /// 查找 <see cref="App.Current.Windows"/> 集合中的对应 <typeparamref name="TWindow"/> 类型的 Window
+        /// </summary>
+        public static void BringWindowToFront<TWindow>() where TWindow : Window, new()
+        {
+            TWindow? window = Current.Windows.OfType<TWindow>().FirstOrDefault();
+
+            if (window is null)
+            {
+                window = new();
+            }
+            if (window.WindowState == WindowState.Minimized || window.Visibility != Visibility.Visible)
+            {
+                window.Show();
+                window.WindowState = WindowState.Normal;
+            }
+            window.Activate();
+            window.Topmost = true;
+            window.Topmost = false;
+            window.Focus();
         }
 
         public new static App Current => (App)Application.Current;
+
         public LoadProgramCore LoadProgramCore { get; set; }
+
         public DataModel DataModel { get; set; }
+
+        public List<LanguageListModel> LangList { get; set; }
+
         public NoticeOverAllBase NoticeOverAllBase { get; set; }
+
         public LanguageModel Language { get; set; }
+
+        public UpdateModel? UpdateObject { get; set; }
+
+        public PkgUpdataModel? PkgUpdataModel { get; set; }
+
+        public BackgroundModel? BackgroundModel { get; set; }
+        public NoticeModel? NoticeObject { get; set; }
+
+        public MainWindow ThisMainWindow { get; set; }
+
+        public bool IsLoadUpdated { get; set; }
+        public bool IsLoadingBackground { get; set; }
+
     }
 }
