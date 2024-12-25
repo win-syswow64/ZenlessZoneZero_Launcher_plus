@@ -262,7 +262,7 @@ namespace ZenlessZoneZero_Launcher_plus.Service
                 {
                     ProcessStartInfo info = new()
                     {
-                        FileName = "https://download.ganyu.us.kg/now/ZenlessZoneZero/CnFile.pkg",
+                        FileName = "https://download.xingdream.top/now/ZenlessZoneZero/CnFile.pkg",
                         UseShellExecute = true,
                     };
                     Process.Start(info);
@@ -271,7 +271,7 @@ namespace ZenlessZoneZero_Launcher_plus.Service
                 {
                     ProcessStartInfo info = new()
                     {
-                        FileName = "https://download.ganyu.us.kg/now/ZenlessZoneZero/GlobalFile.pkg",
+                        FileName = "https://download.xingdream.top/now/ZenlessZoneZero/GlobalFile.pkg",
                         UseShellExecute = true,
                     };
                     Process.Start(info);

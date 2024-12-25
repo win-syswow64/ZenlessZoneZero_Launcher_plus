@@ -496,11 +496,11 @@ namespace ZenlessZoneZero_Launcher_plus.ViewModels
         {
             if (new ConvertService().GetCurrentSchemeName() == "CnFile")
             {
-                FileHelper.OpenUrl("https://download.ganyu.us.kg/now/ZenlessZoneZero/GlobalFile.pkg");
+                FileHelper.OpenUrl("https://download.xingdream.top/now/ZenlessZoneZero/GlobalFile.pkg");
             }
             else
             {
-                FileHelper.OpenUrl("https://download.ganyu.us.kg/now/ZenlessZoneZero/CnFile.pkg");
+                FileHelper.OpenUrl("https://download.xingdream.top/now/ZenlessZoneZero/CnFile.pkg");
             }
         }
 
@@ -509,11 +509,11 @@ namespace ZenlessZoneZero_Launcher_plus.ViewModels
         {
             if (new ConvertService().GetCurrentSchemeName() == "CnFile")
             {
-                FileHelper.OpenUrl("https://download.ganyu.us.kg/pre/ZenlessZoneZero/GlobalFile.pkg");
+                FileHelper.OpenUrl("https://download.xingdream.top/pre/ZenlessZoneZero/GlobalFile.pkg");
             }
             else
             {
-                FileHelper.OpenUrl("https://download.ganyu.us.kg/pre/ZenlessZoneZero/CnFile.pkg");
+                FileHelper.OpenUrl("https://download.xingdream.top/pre/ZenlessZoneZero/CnFile.pkg");
             }
         }
 
